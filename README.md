@@ -1,8 +1,8 @@
 # HealthandFitnessClubManagementSystemProject_COMP3005
 
-Requirments
+Requirements
 2.1
-- The health and fitness Club managment System is orginaized into three diverse needs of club members, trainers and admistrative staff.
+- The health and fitness Club management System is organized into three diverse needs of club members, trainers and admistrative staff.
 The admistrative staff has many responsibilites and operations. The database will already be stored with 3 admin staffs each having a unique username and StaffId,fullname and password. In the application the password and username is needed to sign in. The database will keep track and store, class schedule, room booking, club activites, billings, payments, and fitness equipments each containing their own attributes.
 The cardnality of club administrative is 3, this is because 1 staff would not be enough to do everything and to many staff would be hard to track who did what operation. New admin Staff can still be stored in the database. 
 
