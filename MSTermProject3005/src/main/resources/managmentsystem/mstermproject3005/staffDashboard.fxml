@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="1227.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="managmentsystem.mstermproject3005.Controller2">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane prefHeight="691.0" prefWidth="1227.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="69.0" prefWidth="1227.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="logoutStaff" layoutX="1134.0" layoutY="22.0" mnemonicParsing="false" onAction="#logoutStaff" text="LOGOUT" />
+                        <Label layoutX="27.0" layoutY="26.0" text="Welcome, " />
+                        <Label layoutX="544.0" layoutY="31.0" text="Administrative">
+                           <font>
+                              <Font size="22.0" />
+                           </font></Label>
+                     </children></AnchorPane>
+               </top>
+               <right>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </right>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="manageBookingsView" prefHeight="422.0" prefWidth="827.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="Manage Room Bookings" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="billingsMemberView" prefHeight="422.0" prefWidth="827.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="Billings/Memberships" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="classesView" prefHeight="422.0" prefWidth="827.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="Class Schedules" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="trainsessionView" prefHeight="422.0" prefWidth="827.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="Personal Training Session" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="activitesView" prefHeight="422.0" prefWidth="827.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="Club Activites" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="equipmentsView" prefHeight="422.0" prefWidth="827.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="Fitness Equipments" />
+                              <TableView fx:id="equipmentViewTable" layoutX="95.0" layoutY="38.0" prefHeight="384.0" prefWidth="588.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="166.0" AnchorPane.topAnchor="38.0">
+                                <columns>
+                                  <TableColumn fx:id="equipmentName_admin" prefWidth="141.0" text="Equipment Name" />
+                                  <TableColumn fx:id="equipmentStatus_admin" prefWidth="134.0" text="Status" />
+                                    <TableColumn fx:id="equipmentLast_admin" prefWidth="173.0" text="Last Maintenance Date" />
+                                    <TableColumn fx:id="equipmentNext_admin" prefWidth="212.0" text="Next Maintenance Date" />
+                                </columns>
+                              </TableView>
+                              <Button layoutX="667.0" layoutY="368.0" mnemonicParsing="false" onAction="#addEquipment" text="Add" />
+                              <Button layoutX="749.0" layoutY="322.0" mnemonicParsing="false" text="Update" />
+                              <Button layoutX="717.0" layoutY="368.0" mnemonicParsing="false" text="Remove" />
+                              <TextField fx:id="adminEquipment_name" layoutX="662.0" layoutY="82.0" promptText="Name" />
+                              <DatePicker fx:id="lastMaint" layoutX="662.0" layoutY="211.0" prefHeight="25.0" prefWidth="150.0" promptText="Last Maintenance" />
+                              <DatePicker fx:id="nextMaint" layoutX="662.0" layoutY="163.0" prefHeight="25.0" prefWidth="150.0" promptText="Next Maintenance" />
+                              <Button layoutX="673.0" layoutY="288.0" mnemonicParsing="false" text="CLEAR" />
+                              <ComboBox fx:id="comboBox" layoutX="662.0" layoutY="117.0" prefWidth="150.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+               <bottom>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ButtonBar layoutX="213.0" layoutY="41.0" prefHeight="118.0" prefWidth="839.0">
+                          <buttons>
+                              <Button fx:id="classButton" mnemonicParsing="false" onAction="#switchForm" prefHeight="161.0" text="Class Schedules" />
+                              <Button fx:id="billingsButton" mnemonicParsing="false" onAction="#switchForm" prefHeight="118.0" text="Billings/Memberships" />
+                              <Button fx:id="sessionsButton" mnemonicParsing="false" onAction="#switchForm" prefHeight="116.0" text="Training Sessions" />
+                              <Button fx:id="activitiesButton" minWidth="71.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="118.0" text="Club Activities" />
+                              <Button fx:id="manageButton" mnemonicParsing="false" onAction="#switchForm" prefHeight="132.0" prefWidth="317.0" text="Manage Room Bookins" />
+                            <Button fx:id="equipmentsButton" mnemonicParsing="false" onAction="#switchForm" prefHeight="155.0" prefWidth="113.0" text="Fitness Equipments" />
+                          </buttons>
+                        </ButtonBar>
+                     </children>
+                  </AnchorPane>
+               </bottom>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
