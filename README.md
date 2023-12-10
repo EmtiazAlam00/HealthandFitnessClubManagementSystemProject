@@ -15,3 +15,7 @@ I started working on the Application GUI before the announcement was made that i
 4) Run all the DDL's and from DML run only INSERT INTO administrator (full_name, email, username, password)...., INSERT INTO trainers (full_name, email, username, password)... and INSERT INTO members (full_name, email, height, username, password).... so the application has something to work with.
 5) Now the application can be used, using the managmentsystem/mstermproject3005 folder in the file ManagementSystemApplication.java.
 6) Should be able to sign in using the member data or register and then sign in. Login as a trainer or staff as well using the already inserted data.
+
+Setup instructions for the database Postgresql:
+
+In PostgreSQL create a database called "ManagementSystemProject" or anything else once created make sure to download the SQL files from the SQL folder or copy-paste them, use the query tool, open the files and run all DDL first then, DML, and lastly DQL can be used.
