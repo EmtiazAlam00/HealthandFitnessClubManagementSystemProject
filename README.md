@@ -2,7 +2,7 @@
 
 COMP3005 Term Project
 
-Video: 
+Video: https://youtu.be/-6FACv8ruk8
 
 Emtiaz Alam, 101114889
 
