@@ -287,7 +287,7 @@ public class Controller2 implements Initializable {
             trainsessionView.setVisible(false);
             activitesView.setVisible(false);
             equipmentsView.setVisible(true);
-            membersGender();
+            statusEquipment();
             // equipmentShowData();
         } else if (event.getSource() == notesButton) {
             notesView.setVisible(true);
@@ -325,7 +325,7 @@ public class Controller2 implements Initializable {
     public ComboBox<String> comboBox;
     public String status[] = { "Active", "Inactive" };
 
-    public void membersGender() {
+    public void statusEquipment() {
         if (comboBox != null) {
             List<String> genderList = new ArrayList<>();
 
@@ -454,6 +454,6 @@ public class Controller2 implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        membersGender();
+        statusEquipment();
     }
 }
