@@ -267,4 +267,4 @@ SELECT
 FROM
     members m
 JOIN
-    events e ON m.member_id = e.member_id;
+    events e ON m.member_id = e.member_id; 
