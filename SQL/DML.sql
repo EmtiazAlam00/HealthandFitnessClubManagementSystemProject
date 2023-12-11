@@ -37,7 +37,7 @@ DROP TABLE IF EXISTS payment;
 DROP TABLE IF EXISTS loyalty_points;
 DROP TABLE IF EXISTS activities;
 DROP TABLE IF EXISTS manage;
-
+DROP TABLE IF EXISTS newfitnessequipment;
 
 select * from members
 select * from trainers
@@ -55,6 +55,8 @@ select * from loyalty_points
 select * from activities
 select * from manage
 
+
+ALTER SEQUENCE example_table_id_seq RESTART WITH 1;
 
 -- Insert data into administrator table
 INSERT INTO administrator (full_name, email, username, password) 
@@ -216,7 +218,7 @@ VALUES
     (3, 70, 20),
     (4, 40, 15),
     (5, 60, 25),
-	  (6, 50, 10),
+	(6, 50, 10),
     (7, 30, 5),
     (8, 70, 20),
     (9, 40, 15),
@@ -251,3 +253,4 @@ VALUES
     (1, 1, 1, 1, 1, 1, 1, 1),
 	(2, 2, 2, 2, 2, 2, 2, 2),
 	(3, 3, 5, 5, 7, 3, 5, 1);
+	
