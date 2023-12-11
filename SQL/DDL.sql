@@ -151,3 +151,11 @@ CREATE TABLE manage(
 	foreign key (event_id) references events,
 	foreign key (activity_id) references activities
 );
+
+--For the Application
+create table newFitnessEquipment(
+	name text,
+	status varchar(255),
+	lastMaintenance date,
+	nextMaintenance date
+);
