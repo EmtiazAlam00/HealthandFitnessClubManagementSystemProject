@@ -2,12 +2,6 @@
 
 COMP3005 Term Project
 
-Video: https://clipchamp.com/watch/WZmFFzQI1js
-
-Emtiaz Alam, 101114889
-
-I started working on the Application GUI before the announcement was made that it would be treated as a bonus mark, I am submitting what I have for any potential marks, and I will demonstrate it in the video. TA's can try to run the application,
-
 (Optional) Setup instructions for Application GUI:
 1) Download MSTermProject3005 folder into a Java IDE, I used Intellij
 2) Inside the MSTermProject3005 folder go to src/main then to java folder and managmentsystem/mstermproject3005 folder a file named Database.java will contain code to connect to a PostgreSQL the name of the database and the required user and password, can be configured to your needs.
