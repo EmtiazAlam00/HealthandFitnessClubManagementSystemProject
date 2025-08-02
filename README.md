@@ -13,4 +13,4 @@ COMP3005 Term Project
 Setup instructions for the database Postgresql:
 
 In PostgreSQL create a database called "ManagementSystemProject" or anything else once created make sure to download the SQL files from the SQL folder or copy-paste them, use the query tool, open the files and run all DDL first then, DML, and lastly DQL can be used.
----------------
+----------------
